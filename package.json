@@ -1,0 +1,32 @@
+{
+  "name": "rc-keep-alive",
+  "version": "1.0.0",
+  "description": "implementation of keep-alive in react",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "clean:es": "rimraf es",
+    "clean:cjs": "rimraf cjs",
+    "build:es": "npm run clean:es && tsc",
+    "build:cjs": "npm run clean:cjs && tsc --outDir cjs --module commonjs",
+    "build": "npm run build:es && npm run build:cjs"
+  },
+  "keywords": [
+    "react",
+    "keep-alive"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0",
+    "eslint": "^7.22.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "typescript": "^3.3.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "author": "cxphoe",
+  "license": "MIT"
+}

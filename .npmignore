@@ -1,0 +1,10 @@
+.DS_Store
+.travis.yml
+.editorconfig
+test
+node_modules
+src
+tsconfig.json
+webpack.config.js
+yarn.lock
+*.log
